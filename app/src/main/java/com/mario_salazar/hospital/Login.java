@@ -7,11 +7,11 @@ package com.mario_salazar.hospital;
 public interface Login {
 
     interface View{
-        void ShowLogin();
+        void showLogin(String status);
     }
 
     interface Presenter{
-        void ShowLogin();
+        void showLogin(String status);
         void login(String user, String pass);
     }
 
