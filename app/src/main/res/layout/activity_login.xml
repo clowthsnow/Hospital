@@ -41,6 +41,7 @@
             android:layout_gravity="center_horizontal"
             android:background="#ffffffff"
             android:height="30dp"
+            android:singleLine="true"
             android:textSize="20dp" />
 
         <TextView
