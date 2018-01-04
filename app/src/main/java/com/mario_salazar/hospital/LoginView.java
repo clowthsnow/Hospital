@@ -35,8 +35,14 @@ public class LoginView extends AppCompatActivity implements Login.View {
 
     @Override
     public void showLogin(String status) {
-        if(status.equals("ok")){
-            Intent siguiente= new Intent(LoginView.this, MainActivity.class);
+        if(status.equals("administrador")) {
+            Intent siguiente = new Intent(LoginView.this, AdminView.class);
+            startActivity(siguiente);
+        }else if(status.equals("doctor")) {
+            Intent siguiente = new Intent(LoginView.this, DoctorView.class);
+            startActivity(siguiente);
+        }else if(status.equals("paciente")){
+            Intent siguiente = new Intent(LoginView.this, PacienteView.class);
             startActivity(siguiente);
         }else {
             //txtError.setText("Error al iniciar sesión");

@@ -20,7 +20,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AdminView" />
+        <activity android:name=".RegistroDocView" />
+        <activity android:name=".RegistroEnfView" />
+        <activity android:name=".DatosPacienteView" />
+        <activity android:name=".PacienteView" />
+        <activity android:name=".BuscarPacienteView" />
+        <activity android:name=".DoctorView" />
+        <activity android:name=".RegistroPacView"></activity>
     </application>
 
 </manifest>

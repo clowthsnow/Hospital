@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1F2EB">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:text="ADMINISTRADOR"
+            android:gravity="center"
+            android:textColor="#ffac4207"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/regDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#aec8e4"
+            android:onClick="registrarDoctor"
+            android:text="REGISTRAR DOCTOR"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/regEnf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#aec8e4"
+            android:onClick="registrarEnfermera"
+            android:text="REGISTRAR ENFERMERA"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/regPac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="#aec8e4"
+            android:onClick="registrarPaciente"
+            android:text="REGISTRAR PACIENTE"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/cerrarSesion"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="1dp"
+            android:background="#909497"
+            android:onClick="cerrar"
+            android:text="CERRAR SESION"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

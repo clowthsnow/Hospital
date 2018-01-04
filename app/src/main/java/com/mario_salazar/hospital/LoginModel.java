@@ -20,6 +20,7 @@ public class LoginModel implements Login.Model {
     private Login.Presenter presenter;
 
     public LoginModel(Login.Presenter presenter){
+
         this.presenter=presenter;
     }
 
@@ -45,7 +46,11 @@ public class LoginModel implements Login.Model {
                 String respStr = EntityUtils.toString(httpResponse.getEntity());
 
                 if (!respStr.equals(" null ")) {
-                    presenter.showLogin("ok");
+                    JSONObject jObject = new JSONObject(respStr);
+
+                    String cargo = jObject.getString("cargo");
+
+                    presenter.showLogin(cargo);
 
                 } else {
                     presenter.showLogin("nook");
